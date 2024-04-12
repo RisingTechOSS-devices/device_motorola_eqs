@@ -82,14 +82,6 @@ PRODUCT_COPY_FILES += \
 # Quick Tap
 PRODUCT_PACKAGES += libtensorflowlite_jni
 
-# PowerShare
-PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.eqs
-
-# Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.eqs
-
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2.vendor \
