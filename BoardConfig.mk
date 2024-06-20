@@ -32,8 +32,7 @@ DEVICE_MANIFEST_CAPE_FILES += $(DEVICE_PATH)/manifest_eqs.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG += \
-	vendor/ext_config/moto-waipio-eqs.config \
-	vendor/ext_config/lineage-moto-waipio-eqs.config
+	vendor/ext_config/moto-waipio-eqs.config
 
 TARGET_KERNEL_DIR := $(DEVICE_PATH)-kernel
 
@@ -60,6 +59,31 @@ BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(addprefix $(KERNEL_MODULE_DIR)/, $(notd
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_eqs
 TARGET_RECOVERY_DEVICE_MODULES := libinit_eqs
+
+TARGET_KERNEL_EXT_MODULES += \
+    motorola/drivers/mmi_annotate \
+    motorola/drivers/mmi_info \
+    motorola/drivers/power/bm_adsp_ulog \
+    motorola/drivers/power/mmi_charger \
+    motorola/drivers/power/qti_glink_charger \
+    motorola/drivers/power/qpnp_adaptive_charge \
+    motorola/drivers/misc/utag \
+    motorola/drivers/mmi_relay \
+    motorola/drivers/moto_f_mass_storage \
+    motorola/drivers/moto_f_usbnet \
+    motorola/drivers/misc/mmi_sys_temp \
+    motorola/drivers/watchdogtest \
+    motorola/drivers/regulator/wl2868c \
+    motorola/drivers/sensors \
+    motorola/drivers/misc/sx937x_multi \
+    motorola/drivers/input/touchscreen/touchscreen_mmi \
+    motorola/drivers/input/touchscreen/goodix_berlin_mmi \
+    motorola/drivers/input/touchscreen/stmicro_mmi \
+    motorola/drivers/input/misc/rbs_fod_mmi \
+    motorola/drivers/moto_mm \
+    motorola/drivers/moto_swap \
+    motorola/drivers/nfc/st21nfc \
+    motorola/drivers/ese/st54x
 
 # Partitions
 BOARD_MOT_DP_GROUP_SIZE := 11806965760 # ( BOARD_SUPER_PARTITION_SIZE - 4MB )
