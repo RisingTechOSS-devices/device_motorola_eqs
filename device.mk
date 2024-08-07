@@ -80,10 +80,6 @@ PRODUCT_COPY_FILES += \
 # Quick Tap
 PRODUCT_PACKAGES += libtensorflowlite_jni
 
-# PowerShare
-PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.eqs
-
 # Touch 
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.eqs
@@ -102,6 +98,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_dne/android.hardware.nfc.ese.xml \
     frameworks/native/data/etc/android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_dne/android.hardware.se.omapi.ese.xml
+
+# PowerShare
+PRODUCT_PACKAGES += \
+    vendor.lineage.powershare@1.0-service.moto_sm8475
 
 # Sensors
 PRODUCT_PACKAGES += \
