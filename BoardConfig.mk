@@ -47,7 +47,15 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 90
 
 # Security
-VENDOR_SECURITY_PATCH := 2024-04-01
+BOOT_SECURITY_PATCH := 2024-08-01
+VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
+
+# Verified Boot
+BOARD_AVB_ROLLBACK_INDEX := 19
+BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := 19
+
+# Powershare
+TARGET_POWERSHARE_PATH := /sys/class/power_supply/wireless/device/tx_mode
 
 # inherit from the proprietary version
 include vendor/motorola/eqs/BoardConfigVendor.mk
