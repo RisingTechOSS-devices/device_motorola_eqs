@@ -85,6 +85,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare@1.0-service.default
 
+# Moto Parts
+PRODUCT_PACKAGES += \
+    MotoParts
+    
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
