@@ -1,20 +1,12 @@
 [
   {
-    "repository": "android_device_motorola_sm8475-common",
+    "remote":      "devices-gitlab",
+    "repository":  "vendor_motorola_eqs",
+    "target_path": "vendor/motorola/eqs"
+  },
+  {
+    "remote":      "devices",
+    "repository":  "device_motorola_sm8475-common",
     "target_path": "device/motorola/sm8475-common"
   }
-  {
-    "repository": "android_kernel_motorola_sm8475-modules",
-    "target_path": "kernel/motorola/sm8475-modules"
-  }
-  {
-    "repository": "android_kernel_motorola_sm8475",
-    "target_path": "kernel/motorola/sm8475"
-  }
-  {
-    "repository": "android_kernel_motorola_sm8475-devicetrees",
-    "target_path": "kernel/motorola/sm8475-devicetrees"
-  }
-
-
 ]
